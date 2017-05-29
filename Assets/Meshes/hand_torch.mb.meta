@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c7e51171b825fb54488cc00b9a091c93
-timeCreated: 1495702962
+guid: f227a8dac2e47b34db1ecaa5f73d41b7
+timeCreated: 1496027255
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Box007
+    4300000: Torch
     9500000: //RootNode
   materials:
     importMaterials: 1
