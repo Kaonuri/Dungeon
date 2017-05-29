@@ -5,14 +5,11 @@ public class UpdatePosition : MonoBehaviour
     [SerializeField] private Transform trackerTransform;
     [SerializeField] private Vector3 offset;
 
-	private void LateUpdate ()
-	{
-	    Vector3 back = trackerTransform.forward * -1f;
-	    Vector3 down = trackerTransform.up * -1f;
+    private void LateUpdate()
+    {
+        float offsetMagnitude = Vector3.Magnitude(offset);
+        Vector3 direction = (trackerTransform.transform.forward + trackerTransform.up).normalized;
 
-//        transform.position = trackerTransform.transform.position - trackerTransform.forward * offset.z;	    
-//        print(Vector3.Distance(transform.position, trackerTransform.position));	  
-
-	    transform.position = trackerTransform.position + offset;
-	}
+        transform.position = trackerTransform.position + direction * offsetMagnitude;
+    }
 }
